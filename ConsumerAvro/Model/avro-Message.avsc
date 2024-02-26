@@ -1,0 +1,10 @@
+{
+  "type" : "record",
+  "name" : "AvroMessage",
+  "namespace" : "NamespageMessage",
+  "fields" : [ 
+    {"name" : "Id", "type" : "string"},
+    {"name" : "Text", "type" : "string"},
+    {"name" : "CreatedDate", "type" : "string"}
+   ]
+}
