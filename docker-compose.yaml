@@ -75,6 +75,16 @@ services:
     environment:
       KAFKA_BROKERCONNECT: broker:29092
 
+  sql:
+    image: mcr.microsoft.com/mssql/server
+    container_name: sql
+    networks:
+      - broker-kafka
+    ports:
+      - "1433:1433"
+    environment:
+      MSSQL_SA_PASSWORD: Password123
+
 
 networks:
   broker-kafka:
