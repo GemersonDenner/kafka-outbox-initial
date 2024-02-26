@@ -1,0 +1,6 @@
+@ProducerOutbox_HostAddress = http://localhost:5071
+
+GET {{ProducerOutbox_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
